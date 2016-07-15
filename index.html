@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ciklum JavaScript Internship</title>
+
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/slideDownUpMenu.js"></script>
+    <script src="js/accordion.js"></script>
+
+    <script src="js/slideDownHover.js"></script>
+
+
+
+
+
+
+
+
+<script>
+
+        function send() {
+            var valid = true;
+            var elems = document.forms[0].elements;
+            for (var i = 0; i < document.forms[0].length; i++) {
+                if (elems[i].getAttribute('type') == 'text' ||
+                        elems[i].getAttribute('type') == 'email' ||
+                        elems[i].getAttribute('type') == 'password') {
+
+                    if (elems[i].value == '') {
+
+                        elems[i].style.border = '2px solid #ff3366';
+                        valid = false;
+                    }
+
+
+
+                }
+            }
+
+                    return valid;
+        }
+
+
+</script>
+
+
+<script>
+    $(document).ready(function(){
+
+        $("#applicationName,#applicationEmail,#applicationPass").keyup(function () {
+
+            var value = $(this).val();
+if(value != " ")
+{
+    $(this).css("border","2px solid transparent")
+}
+
+
+
+        }).keyup();
+
+    });
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container container-navbar">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/microsoft.png"> </a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn" data-toggle="dropdown">Магазин <b class="caret"></b></a>
+                    <ul class="dropdown-menu block-ul-1">
+                        <li><a href="#" class="first-name">Домашня сторiнка</a></li>
+                        <li class="dropdown-submenu ">
+                            <a  href="#" class="link-down">Office</a>
+                            <ul class="dropdown-menu block-right-1">
+                                <li><a href="#">Всі версії Office</a></li>
+                                <li><a href="#">Програмні комплекси Office</a></li>
+                                <li><a href="#">Усі програми Office</a></li>
+                                <li><a href="#">Office для вашего Mac</a></li>
+                                <li><a href="#"> Office 365</a></li>
+                                <li><a href="#">Порівняння програмних комплексів Office</a></li>
+                                <li><a href="#">Мовні пакеті Office</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Windows</a>
+                            <ul class="dropdown-menu block-right-2">
+                                <li><a href="#">Windows 10 Home</a></li>
+                                <li><a href="#">Windows 10 Pro</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn" data-toggle="dropdown">Продукты <b class="caret"></b></a>
+                    <ul class="dropdown-menu block-ul-1">
+
+                        <li class="dropdown-submenu ">
+                            <a href="#" class="link-down">Програмне забезпечення <br>та служби</a>
+                            <ul class="dropdown-menu ">
+                                <li><a href="#">Windows</a></li>
+                                <li><a href="#">Office</a></li>
+                                <li><a href="#">Безкоштовні завантаження та безпека</a></li>
+                                <li><a href="#">Internet Explorer</a></li>
+                                <li><a href="#">Microsoft Edge</a></li>
+                                <li><a href="#">Skype</a></li>
+                                <li><a href="#">OneNote</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Пристрої та Xbox</a>
+                            <ul class="dropdown-menu block-right-3">
+                                <li><a href="#">Комп'ютерні аксесуари</a></li>
+                                <li><a href="#">Microsoft Lumia</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="link-down2">Для бiзнесу</a>
+                            <ul class="dropdown-menu block-right-4">
+                                <li><a href="#">Microsoft Azure</a></li>
+                                <li><a href="#">Microsoft Dynamics</a></li>
+                                <li><a href="#">Microsoft для бізнесу</a></li>
+                                <li><a href="#">Office для бізнесу</a></li>
+                                <li><a href="#">Skype для бізнесу</a></li>
+                                <li><a href="#">Корпорптивні рішення</a></li>
+                                <li><a href="#">Рішення для малого бізнесу</a></li>
+                                <li><a href="#">Знайти постачальника рішень</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Для IT-фахiвцiв i розробникiв</a>
+                            <ul class="dropdown-menu block-right-5">
+                                <li><a href="#">Розробка програм Windows</a></li>
+                                <li><a href="#">Microsoft Azure</a></li>
+                                <li><a href="#">MSDN</a></li>
+                                <li><a href="#">Visual Studio</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Освiта</a>
+                            <ul class="dropdown-menu block-right-6">
+                                <li><a href="#">Освіта</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle btn">Пiдримка </a>
+                </li>
+            </ul>
+            <!--
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Пошук на веб-сайті Microsoft.com" >
+                    <button type="submit-search" class="btn-search ">
+                        <span class="glyphicon-search"></span>
+
+                    </button>
+
+                </div>
+
+            </form>
+-->
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+<div class="container-fluid container-fluid-bg bg">
+
+    <div class="container">
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 main-block">
+        <h1>
+            Безопасный доступ,<br>
+            синхронизация и<br>
+            совместная работа<br>
+        </h1>
+        <h3>
+            Хранение и безопасный доступ к<br>
+            данным — аккаунты Dropbox Business<br>
+            пользуются доверием у системных<br>
+            администраторов и нравятся пользователям.<br>
+        </h3>
+        <button class="buy">Попробуйте бесплатную 30-дневную ознакомительную версию </button><br>
+       <span >или  <a href="#">купите прямо сейчас</a></span>
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+
+ <div class="container-fluid container-fluid-subscription">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 block-subscription">
+                <h2>Join over 2 million designers already using InVision. Get InVision <strong>free</strong> forever!</h2>
+
+                <form id="application" action="application.php"  method="post" name="application  "  >
+
+
+
+                    <input name="name" class="inputName" type="text"  id="applicationName" maxlength="20" placeholder="Your Name"   />
+
+                    <input name="email"  class="inputEmail" type="email" id="applicationEmail" maxlength="20" placeholder="Email Adress" />
+                    <input name="pass" class="inputPass" type="password" id="applicationPass" maxlength="20" placeholder="Create a Password"  />
+                    <button class="applicationButton inputBtn  "  type="submit"   onclick="return send();  "  form="application"><strong> GET STRTED - FREE FOREVER!</strong> </button>
+
+                </form>
+
+                <p class="col-morgin">
+
+                    By clicking "Get Started — Free Forever!" I agree to InVision's  <a href="#">Terms of Service.</a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+</div>
+
+
+<div class="img-overlay">
+<div class="container-fluid container-fluid-images">
+
+    <div class="row images-blocks">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 block-one-image">
+
+            <a href="#" ><img src="images/eve-valkyrie.jpg" >
+            <div class="text-name-img">
+                <h4>
+                    FEATURED CONTENT
+                </h4>
+                <h3>EVE: Valkyrie</h3>
+            </div>
+            </a>
+
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 block-one-image">
+            <a href="#" ><img class="img-responsive" src="images/luckys-tale.jpg" >
+
+                <div class="text-name-img">
+                    <h4>
+                       INCLUDED WITH ALL RIFT PURCHASES
+                    </h4>
+                    <h3>Lucky`s Tale</h3>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 block-one-image">
+            <a href="#"><img class="img-responsive" src="images/touch.jpg" >
+
+                <div class="text-name-img">
+                    <h4>
+                        FEATURED STORY
+                    </h4>
+                    <h3>Over 30 Full Games Launching with Oculus Touch this Year</h3>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid container-fluid-footer">
+
+<div class="container container-footer">
+
+<div class="row">
+    <div class="col-lg-12 accordion">
+
+            <h3>Shop and Learn</h3>
+            <p><a href="#">Mac</a><br>
+                <a href="#"> iPad</a><br>
+                <a href="#">iPhone</a><br>
+                <a href="#"> Watch</a><br>
+                <a href="#">  TV</a><br>
+                <a href="#"> Music</a><br>
+                <a href="#"> iTunes</a><br>
+                <a href="#"> iPod</a><br>
+                <a href="#"> Accessories</a><br>
+                <a href="#"> Gift Cards</a><br></p>
+            <h3>Apple Store </h3>
+            <p>
+                <a href="#">  Find a Store </a><br>
+                <a href="#"> Genius Bar</a><br>
+                <a href="#">  Workshops and Learning</a><br>
+                <a href="#">  Youth Programs</a><br>
+                <a href="#">  Apple Store App</a><br>
+                <a href="#">  Refurbished</a><br>
+                <a href="#">  Financing</a><br>
+                <a href="#">  Reuse and Recycling</a><br>
+                <a href="#">  Order Status</a><br>
+                <a href="#">  Shopping Help</a><br>
+            </p>
+            <h3>For Education</h3>
+
+            <p>
+                <a href="#"> Apple and Education</a><br>
+                <a href="#"> Shop for College</a><br>
+            </p>
+            <h3>For Business</h3>
+
+            <p>
+                <a href="#"> Apple and Business</a><br>
+                <a href="#"> Shop for Business</a><br>
+            </p>
+        <h3>Account</h3>
+
+        <p>
+            <a href="#"> Manage Your Apple ID</a><br>
+            <a href="#"> Apple Store Account</a><br>
+            <a href="#"> iCloud.com</a><br>
+        </p>
+        <h3>Apple Values</h3>
+
+        <p>
+            <a href="#">  Environment</a><br>
+            <a href="#"> Supplier Responsibility</a><br>
+            <a href="#"> Accessibility</a><br>
+            <a href="#"> Privacy</a><br>
+            <a href="#"> Inclusion and Diversity</a><br>
+            <a href="#"> Education</a><br>
+        </p>
+
+            <h3 class="last1">About Apple</h3>
+
+            <p class="last">
+                <a href="#">Apple Info</a><br>
+                <a href="#"> Newsroom</a><br>
+                <a href="#">Job Opportunities</a><br>
+                <a href="#"> Investors</a><br>
+                <a href="#"> Events</a><br>
+                <a href="#"> Contact Apple</a><br>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="row colons-list">
+
+        <div class="col-lg-2 col-md-2 col-sm-2 colon-1">
+            <h3><strong>Shop and Learn</strong> </h3>
+            <p>
+
+                <a href="#">Mac</a><br>
+                <a href="#"> iPad</a><br>
+                <a href="#">iPhone</a><br>
+                <a href="#"> Watch</a><br>
+                <a href="#">  TV</a><br>
+                <a href="#"> Music</a><br>
+                <a href="#"> iTunes</a><br>
+                <a href="#"> iPod</a><br>
+                <a href="#"> Accessories</a><br>
+                <a href="#"> Gift Cards</a><br>
+            </p>
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-2   colon-2">
+
+            <h3><strong>Apple Store</strong> </h3>
+
+            <p>
+
+                <a href="#">  Find a Store </a><br>
+                <a href="#"> Genius Bar</a><br>
+                <a href="#">  Workshops and Learning</a><br>
+                <a href="#">  Youth Programs</a><br>
+                <a href="#">  Apple Store App</a><br>
+                <a href="#">  Refurbished</a><br>
+                <a href="#">  Financing</a><br>
+                <a href="#">  Reuse and Recycling</a><br>
+                <a href="#">  Order Status</a><br>
+                <a href="#">  Shopping Help</a><br>
+
+            </p>
+
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-2  colon-3">
+            <h3><strong>For Education</strong> </h3>
+            <p>
+                <a href="#"> Apple and Education</a><br>
+                <a href="#"> Shop for College</a><br>
+            </p>
+
+            <h3><strong>For Business</strong> </h3>
+            <p>
+                <a href="#"> Apple and Business</a><br>
+                <a href="#"> Shop for Business</a><br>
+            </p>
+
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-2  colon-4">
+            <h3><strong>Account</strong> </h3>
+            <p>
+                <a href="#"> Manage Your Apple ID</a><br>
+                <a href="#"> Apple Store Account</a><br>
+                <a href="#"> iCloud.com</a><br>
+            </p>
+
+            <h3><strong>Apple Values</strong> </h3>
+            <p>
+
+                <a href="#">  Environment</a><br>
+                <a href="#"> Supplier Responsibility</a><br>
+                <a href="#"> Accessibility</a><br>
+                <a href="#"> Privacy</a><br>
+                <a href="#"> Inclusion and Diversity</a><br>
+                <a href="#"> Education</a><br>
+            </p>
+
+        </div>
+        <div class="col-lg-2  col-md-2 col-sm-2  colon-5">
+            <h3><strong>About Apple</strong> </h3>
+            <p>
+
+                <a href="#">Apple Info</a><br>
+                <a href="#"> Newsroom</a><br>
+                <a href="#">Job Opportunities</a><br>
+                <a href="#"> Investors</a><br>
+                <a href="#"> Events</a><br>
+                <a href="#"> Contact Apple</a><br>
+            </p>
+
+
+
+        </div>
+    </div>
+<div class="row footer-blocks">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>More ways to shop: Visit an <a href="#">Apple Store</a>, call 1-800-MY-APPLE, or <a href="#">find a reseller</a>.</p>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 down-border">
+        <p class="one-p">Copyright © 2016 Apple Inc. All rights reserved.</p>
+
+<p class="two-p">
+            <a class="first-link-footer" href="#"> Privacy Policy</a>
+            <a href="#">  Terms of Use</a>
+            <a href="#">  Sales and Refunds</a>
+            <a href="#">  Legal</a>
+            <a href="#">  Site Map</a>
+</p>
+
+
+</div>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
